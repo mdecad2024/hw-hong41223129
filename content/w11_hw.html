@@ -156,12 +156,13 @@ img.add_border {
 <p><a href="https://1drv.ms/u/c/157887f71327cbcc/EajVr2JVyC1Pt3CK5X_grqcB6a0_ionHbqGmUFSxvv9Xbw?e=ONnVH9">w11-Support Bobine_sldprt.slvs</a>  nx<a href="https://1drv.ms/u/c/157887f71327cbcc/EQ2QpvQ1EyZDjNoTFam3kS4BVuEnU8j-__M7jeBfBFM0iQ?e=lLYnAJ">Support Bobine_sldprt.prt</a></p>
 <p><a href="https://1drv.ms/u/c/157887f71327cbcc/ET4dwS4sQaRLsZd6BYn2fSEB9zf1ZCXwG_E8hshc4wJsJQ?e=WOxE66">w11-Piececomposite_sldprt.slvs</a>  nx<a href="https://1drv.ms/u/c/157887f71327cbcc/EXAlOAcshp1JuYmJyUopsPkBIr3RKGAGT9_WKMZOobJb8w?e=TflEUM">Piece composite_sldprt.prt</a></p>
 <p><a href="https://1drv.ms/u/c/157887f71327cbcc/EU6HOwYafI1Glgwm8EjGcuQBUubq-RGiWnKiqJJafVLn_Q?e=cedp1F">w11-Plastique Flipper_sldprt.slvs</a> nx<a href="https://1drv.ms/u/c/157887f71327cbcc/EaGXLwzZVzxPmC3sekG6L7cB4SKiruYFsLWasVYk7n6QPQ?e=WcBMbm">Plastique Flipper_sldprt.prt</a></p>
+<p><a href="https://1drv.ms/u/c/157887f71327cbcc/EZFzJBtmkGxJmqV3kOjK7ScB1Fh_9vDQf-qXkaKaVC-HQg?e=2MW9dw">w11-Platine Batteur_sldprt.prt.slvs</a> nx<a href="https://1drv.ms/u/c/157887f71327cbcc/EVVREq30Gm1FkCNA3Xiyvs0BCBhS78NZKAya7OHy0-rCgA?e=Wjuf0r">Platine Batteur_sldprt.prt</a></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/f1uamigVfiY?si=lrq6KAHfw5_eNF9S" title="YouTube video player" width="560"></iframe></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/w18SXsL-OAg?si=oMkdJvheFECuWMu5" title="YouTube video player" width="560"></iframe></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/PPwl7-bq0Hc?si=Sm48Lxhe0ZpGUGiu" title="YouTube video player" width="560"></iframe></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Pu2Lddvyn48?si=TUPK0cPSuD_DQ7bL" title="YouTube video player" width="560"></iframe></p>
 <script src="./../cmsimde/static/jsc3d.js" type="text/javascript"></script>
-<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv2" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv3" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv4" style="border: 1px solid;" width="400"></canvas> <!-- 可以添加更多的 canvas --></div>
+<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv2" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv3" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv4" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv5" style="border: 1px solid;" width="400"></canvas><!-- 可以添加更多的 canvas --></div>
 <div style="width: 400px; height: 70px; border: 1px solid;">Model Color:<input id="mdlClr" onchange="changeOption('ModelColor',this.value)" style="margin-right: 50px;" type="color" value="#00ff40"/> Back Color1:<input id="bckClr1" onchange="changeOption('BackgroundColor1',this.value)" style="margin-right: 50px;" type="color"/> Back Color2:<input id="bckClr2" onchange="changeOption('BackgroundColor2',this.value)" type="color"/><br/> Render Mode:<select id="render" onchange="changeOption('RenderMode',this.value)">
 <option>Flat</option>
 <option>Point</option>
@@ -219,6 +220,7 @@ function openByUrl(){
     readSTLfile(opt, 'cv2'); // 第二個 canvas
     readSTLfile(opt, 'cv3'); // 第三個 canvas 
     readSTLfile(opt, 'cv4'); // 第四個 canvas
+    readSTLfile(opt, 'cv5'); // 第五個 canvas
 }
 
 function openByGet(){
@@ -226,7 +228,8 @@ function openByGet(){
         "https://s104.cycu.org/~41223129/w11-Flipper_sldprt.prt.stl",
         "https://s104.cycu.org/~41223129/w11-SupportBobine_sldprt.prt.stl",
         "https://s104.cycu.org/~41223129/w11-PlastiqueFlipper_sldprt.prt.stl",
-        "https://s104.cycu.org/~41223129/w11-Piececomposite_sldprt.prt.stl"
+        "https://s104.cycu.org/~41223129/w11-Piececomposite_sldprt.prt.stl",
+        "https://s104.cycu.org/~41223129/w11-PlatineBatteur_sldprt.prt.stl",
     ];
     var opt = getOptions();
     urls.forEach((url, index) => {
