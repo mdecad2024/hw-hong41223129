@@ -246,9 +246,12 @@ openByGet();
 <p style="padding-left: 30px;">請將操作影片嵌入 ......</p>
 <p style="padding-left: 30px;">所完成的零件檔案下載</p>
 <h1>w10</h1>
-<p><span>利用 Solvespace 繪製</span><a href="https://mde.tw/cad2024/images/cad2024_ex1.png">圖面</a><span>所示零件, 並將過程錄製為操作影片 </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/41223129_nfu_edu_tw/ER-3dMt0CLxCj7Oqm-gm8-gBLBr4Nbr_JUTFIc3aCR7wWA?e=jh5NAF">untitled5.slvs</a><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/oUnNqH6z7vY?si=u4CqPOV6PQzceV_Q" title="YouTube video player" width="560"></iframe></p>
+<p><span>利用 Solvespace 繪製</span><a href="https://mde.tw/cad2024/images/cad2024_ex1.png">圖面</a><span>所示零件, 並將過程錄製為操作影片 </span><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/41223129_nfu_edu_tw/ER-3dMt0CLxCj7Oqm-gm8-gBLBr4Nbr_JUTFIc3aCR7wWA?e=jh5NAF">untitled5.slvs</a></p>
+<p></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/oUnNqH6z7vY?si=u4CqPOV6PQzceV_Q" title="YouTube video player" width="560"></iframe></p>
+<p></p>
 <script src="/static/jsc3d.js" type="text/javascript"></script>
-<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas> <canvas height="300" id="cv2" style="border: 1px solid;" width="400"></canvas></div>
+<div id="models"><canvas height="300" id="cv1" style="border: 1px solid;" width="400"></canvas></div>
 <div style="width: 400px; height: 70px; border: 1px solid;">Model Color:<input id="mdlClr" onchange="changeOption('ModelColor',this.value)" style="margin-right: 50px;" type="color" value="#00ff40"/> Back Color1:<input id="bckClr1" onchange="changeOption('BackgroundColor1',this.value)" style="margin-right: 50px;" type="color"/> Back Color2:<input id="bckClr2" onchange="changeOption('BackgroundColor2',this.value)" type="color"/><br/> Render Mode:<select id="render" onchange="changeOption('RenderMode',this.value)">
 <option>Flat</option>
 <option>Point</option>
@@ -303,13 +306,11 @@ function openByUrl(){
     opt.SceneUrl = url;
     // 可以添加更多的 STL URL
     readSTLfile(opt, 'cv1'); // 為每個 canvas 調用
-    readSTLfile(opt, 'cv2'); // 第二個 canvas
 }
 
 function openByGet(){
     var urls = [
         "https://s104.cycu.org/~41223129/41223129_05.stl",
-        "https://s104.cycu.org/~41223129/41223129_07.stl"
     ];
     var opt = getOptions();
     urls.forEach((url, index) => {
@@ -319,8 +320,7 @@ function openByGet(){
 }
 
 openByGet();
-</script>
-<h1>w11_hw</h1>
+</script><h1>w11_hw</h1>
 <p><span>分組根據 </span><a href="https://mde.tw/cad2024/downloads/flipper_nx2312.7z">flipper_nx2312.7z</a><span> 中的零件尺寸, 分別採 Solvespace 與 NX2312 繪製以下零件:</span></p>
 <p>Plongeur Batteur_sldprt.prt</p>
 <p>Piece composite_sldprt.prt</p>
@@ -854,13 +854,13 @@ openByGet();
 <p>期末口頭與書面專題報告 (30%)</p>
 <p>期末口頭專題報告影片:</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/yvOg3Jjf3Cw?si=YovoGQhsbzU_8sdV" title="YouTube video player" width="560"></iframe></p>
-<p>後續補充了<span>跳珠器與</span>記分板</p>
+<p>後續補充<span>跳珠器與</span>記分板</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rWQxKl48sQ0?si=T2rszX1CYk9HD7vM" title="YouTube video player" width="560"></iframe></p>
 <p style="padding-left: 30px;">......</p>
 <p>期末書面專題報告檔案 (pdf):</p>
 <p style="padding-left: 30px;">......</p>
 <p>電腦輔助設計與實習課程總結心得:</p>
-<p>這學期我學到許多不一樣的程式，有些程式是我沒有接觸過的，我在一開始不懂如何操作這些，但在幾次操作過後便稍微熟悉了一些，我也自知我還有很多內容沒有接觸過，</p>
+<p>這學期我學到許多不一樣的程式，有些程式是我沒有接觸過的，我在一開始不懂如何操作這些，<span>CoppeliaSim對我來說是一個很特別的程式，它可以模擬機構的運動，剛開始學的時候完全不知道怎麼使用</span>，在幾次操作過後便稍微熟悉了一點，但我認為我還有許多地方還要再瞭解，我覺得我需要再多做加強。</p>
 <p style="padding-left: 30px;">......</p>
 <p>期末報告自評成績:</p>
 <p style="padding-left: 30px;">完成上述流程後, 請將 Final Report 自評分數輸入 cad2024 自評表單中.</p>
